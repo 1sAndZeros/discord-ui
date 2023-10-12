@@ -5,6 +5,8 @@
 Built with React / Vite
 Icons Library used: react-icons
 
+![preview](./public/preview.png)
+
 ## TODO
 
 * Hover Effects
