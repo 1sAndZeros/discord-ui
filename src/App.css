@@ -1,0 +1,148 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.server-icons {
+  background-color: var(--bg-neutral-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+.server-icons .section {
+  border-bottom: 2px solid var(--clr-misc-400);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  gap: 10px;
+}
+
+.server-icons .section:last-child {
+  border-bottom: 0;
+}
+
+.main-container {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: auto 6fr;
+  grid-template-rows: auto 1fr;
+}
+
+.channels-sidebar {
+  width: 300px;
+  background-color: var(--bg-neutral-200);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+
+.central {
+  flex-grow: 1;
+  background-color: var(--bg-neutral-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.central>* {
+  padding: 20px;
+}
+
+.central .message>div {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--bg-neutral-400);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.central .message input {
+  flex-grow: 1;
+}
+
+input,
+:focus-visible {
+  border: 0;
+  outline: 0;
+}
+
+#navbar {
+  grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 340px 6fr;
+  background-color: var(--bg-neutral-300);
+}
+
+#navbar .channels {
+  background-color: var(--bg-neutral-200);
+  border-bottom: 2px solid var(--clr-misc-500);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#navbar .channels>:first-child,
+#navbar .main>:first-child {
+  flex-grow: 1;
+}
+
+#navbar .main {
+  background-color: var(--bg-neutral-300);
+  border-bottom: 2px solid var(--clr-misc-500);
+  display: flex;
+  align-items: center;
+}
+
+#navbar .main .nav-right {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#navbar .main .search-bar {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 6fr 1fr;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+#navbar .main .search-bar input {
+  display: grid;
+  padding: 5px;
+}
+
+.channels-sidebar .user {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.channels-sidebar .user .name {
+  flex-grow: 1;
+}
+
+.edit-channel {
+  color: #1DA9F8;
+}
+
+.central .welcome {
+  line-height: 2;
+}
+
+.central .welcome h4 {
+  font-size: 2rem;
+}

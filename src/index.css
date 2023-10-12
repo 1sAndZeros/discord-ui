@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "gg sans";
+  src: url("/fonts/gg_sans_regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("/fonts/gg_sans_medium.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("/fonts/gg_sans_semibold.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("/fonts/gg_sans_bold.woff2");
+  font-weight: 700;
+}
+
+:root {
+
+  /* Background Colors */
+
+  --bg-neutral-200: #2B2D31;
+  /* Channel Selector Background */
+
+  --bg-neutral-300: #313338;
+  /* Channel Background */
+
+  --bg-neutral-400: #383A40;
+  /* Message Text Input Background */
+
+  --bg-neutral-500: #404248;
+  /* Highlighted / Selected Channel Name Background */
+
+  --bg-neutral-600: #313338;
+  /* Server Icon Background */
+
+  --bg-neutral-700: #232428;
+  /* User Info Background */
+
+  --bg-neutral-800: #1E1F22;
+  /* Server Selector Sidebar Background / Search Box Background */
+
+  --bg-user: #F8A531;
+  /* User Icon Background */
+
+  --bg-active: #596AEE;
+  /* Selected Server Icon Background */
+
+
+  /* Font Colors */
+  --font-white: #FFFFFF;
+  --font-grey: #949BA3;
+  --font-grey-icon: #B5BAC1;
+  --font-blue: #1DA9F8;
+  --font-muted: #666870;
+
+
+  /* Misc Colors */
+
+  --clr-misc-400: #35363C;
+  /* Server Separator */
+
+  --clr-misc-500: #27282C;
+  /* Horizontal Separator */
+
+  --clr-misc-logo: #DBDEE1;
+  /* Discord Logo */
+
+  --clr-misc-indicator: #F2F3F5;
+  /* Select Server Indicator */
+
+  --clr-misc-green: #2CA45C;
+  /* Green Icon */
+
+  --clr-misc-grey: #CACBCE;
+  /* Grey Icon */
+
+}
+
+a {
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--clr-misc-green);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--font-white);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--clr-misc-green);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  background: transparent;
+}
+
+svg {
+  cursor: pointer;
+}

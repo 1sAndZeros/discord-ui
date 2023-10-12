@@ -1,0 +1,7 @@
+.channel-icon {
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
