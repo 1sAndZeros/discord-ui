@@ -21,6 +21,7 @@ import {
   BiSolidPencil,
 } from "react-icons/bi";
 import { HiGif, HiUsers } from "react-icons/hi2";
+import ChannelList from "./components/ChannelList";
 
 function App() {
   return (
@@ -74,18 +75,11 @@ function App() {
           </div>
         </nav>
         <section className="channels-sidebar">
-          <div>
-            <h4>Text Channels</h4>
-            <p># chat</p>
-            <p># general</p>
-          </div>
-          <div>
-            <h4>Voice Channels</h4>
-            <p># General</p>
-          </div>
+          <ChannelList heading="Text Channels" channels={["chat", "general"]} />
+          <ChannelList heading="Voice Channels" channels={["General"]} />
           <div className="user">
             <ChannelIcon bg="var(--bg-user)">
-              <FaDiscord />
+              <FaDiscord color="var(--font-white)" />
             </ChannelIcon>
             <div className="name">
               <strong>User</strong>
@@ -106,8 +100,8 @@ function App() {
             </h4>
             <p>This is the start of the #general channel.</p>
             <p className="edit-channel">
-              <BiSolidPencil />
-              Edit Channel!
+              <BiSolidPencil color="var(--font-blue)" />
+              {`${" Edit Channel!"}`}
             </p>
           </div>
           <div className="message">

@@ -134,8 +134,14 @@ button:focus-visible {
 
 input {
   background: transparent;
+  color: var(--font-white);
 }
 
 svg {
   cursor: pointer;
+  color: var(--font-grey-icon);
+}
+
+svg:hover {
+  color: var(--font-white);
 }
